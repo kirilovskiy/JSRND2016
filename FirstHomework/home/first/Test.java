@@ -1,3 +1,4 @@
+package home.first;
 
 import java.io.*;
 import java.util.Random;
