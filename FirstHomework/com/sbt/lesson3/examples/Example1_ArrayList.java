@@ -1,7 +1,7 @@
-package com.sbt.examples;
+package com.sbt.lesson3.examples;
 
-import com.sbt.Person;
-import com.sbt.PersonFirstLoad;
+import com.sbt.lesson3.PersonFirstLoad;
+import com.sbt.lesson3.Person;
 
 import java.util.ArrayList;
 import java.util.List;

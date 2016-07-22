@@ -93,16 +93,18 @@ public class third {
         }
     }
 
-    public static void task_6(List<String> lines) throws IOException{
+    public static void task_6(List<String> lines) throws IOException {
         System.out.println("----------------task 6--------------------");
         System.out.println("Input numbers with character ' ' between them");
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String[] nums = reader.readLine().split(" +");
-        for(String num : nums){
-            if (Integer.valueOf(num)<lines.size())
-                System.out.println(lines.get(Integer.valueOf(num)));
-            else System.out.println("Index out of bounds");
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))){
+            String[] nums = reader.readLine().split(" +");
+            for (String num : nums) {
+                if (Integer.valueOf(num) < lines.size())
+                    System.out.println(lines.get(Integer.valueOf(num)));
+                else System.out.println("Index out of bounds");
+            }
         }
+
     }
 
     public static void main(String[] args) throws IOException{
@@ -110,6 +112,7 @@ public class third {
         List<String> lines = Files.readAllLines(Paths.get("C:\\1\\1.txt"), Charset.forName("Cp1251"));
         ArrayList<String> arl = new ArrayList<String>(); // для всех слов
         Set<String> setl = new HashSet<String>(); // для уникальных слов
+        // переделать в Map - будет быстрее и красивее работать
         for(String s : lines){
             arl.addAll(divide_str(s.split("[\\s\\p{Punct}]+")));
             setl.addAll(divide_str(s.split("[\\s\\p{Punct}]+")));

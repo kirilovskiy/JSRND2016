@@ -1,16 +1,14 @@
-package com.sbt.examples;
+package com.sbt.lesson3.examples;
 
-import com.sbt.Person;
-import com.sbt.PersonFirstLoad;
+import com.sbt.lesson3.PersonFirstLoad;
+import com.sbt.lesson3.Person;
 
-import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
-
-public class Example4_LinkedHashSet {
+public class Example3_TreeSet {
     public static void main(String[] args) {
-        Set<Person> persons =  new LinkedHashSet<>();
+        Set<Person> persons =  new TreeSet<>();
         PersonFirstLoad.init(persons);
         PersonFirstLoad.print(persons);
 

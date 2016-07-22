@@ -1,4 +1,4 @@
-package com.sbt;
+package com.sbt.lesson3;
 
 public class Person implements Comparable<Person>{
     long id;

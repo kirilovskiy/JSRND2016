@@ -1,4 +1,4 @@
-package com.sbt.BeforeGernerics;
+package com.sbt.lesson3.BeforeGernerics;
 
 import java.util.ArrayList;
 

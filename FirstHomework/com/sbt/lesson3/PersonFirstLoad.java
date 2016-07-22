@@ -1,4 +1,4 @@
-package com.sbt;
+package com.sbt.lesson3;
 
 import java.util.Collection;
 import java.util.Iterator;
