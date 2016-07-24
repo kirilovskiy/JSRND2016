@@ -5,19 +5,45 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
 
 public class third {
 
-    public static ArrayList<String> divide_str(String[] str){
+    /*public static ArrayList<String> divide_str(String[] str){
             ArrayList<String> tmp = new ArrayList<String>();
             for(String s : str){
                 tmp.add(s);
             }
             return tmp;
         }
+     */
+    /*public static void task_2(Set<String> setl){
+    //Отсортированный список разных слов по длине и затем по тексту
+    System.out.println("---------------task 2---------------------");
+    TreeSet<String> sotredset = new TreeSet<String>(new Comparator<String>() {
+        public int compare(String s1, String s2) {
+            return ((s1.length()-s2.length()) < 0 ? -1 : (s1.length()-s2.length()) > 0 ? 1 : s1.compareTo(s2));
+        }
+    });
+    sotredset.addAll(setl);
+    print(sotredset);
+    System.out.println("sotredset.size()="+sotredset.size());
+}*/
+
+/*public static void task_3(Collection<String> setl,Collection<String> arl){
+    //Задание 3: Подсчитайте и выведите на экран сколько раз каждое слово встречается в файле.
+    System.out.println("-----------------task 3-------------------");
+    int cnt;
+    for(String s : setl){
+        cnt=0;
+        for(String s2 : arl){
+            if (s.equals(s2)) cnt++;
+        }
+        System.out.println("element {"+s+"} occurs "+cnt+"times");
+    }
+}*/
+
 
     public static void print(Collection<String> str){
         Iterator<String> iterator = str.iterator();
@@ -48,32 +74,6 @@ public class third {
 
         @Override
         public void remove() {
-        }
-    }
-
-    public static void task_2(Set<String> setl){
-        //Отсортированный список разных слов по длине и затем по тексту
-        System.out.println("---------------task 2---------------------");
-        TreeSet<String> sotredset = new TreeSet<String>(new Comparator<String>() {
-            public int compare(String s1, String s2) {
-                return ((s1.length()-s2.length()) < 0 ? -1 : (s1.length()-s2.length()) > 0 ? 1 : s1.toString().compareTo(s2.toString()));
-            }
-        });
-        sotredset.addAll(setl);
-        print(sotredset);
-        System.out.println("sotredset.size()="+sotredset.size());
-    }
-
-    public static void task_3(Collection<String> setl,Collection<String> arl){
-        //Задание 3: Подсчитайте и выведите на экран сколько раз каждое слово встречается в файле.
-        System.out.println("-----------------task 3-------------------");
-        int cnt;
-        for(String s : setl){
-            cnt=0;
-            for(String s2 : arl){
-                if (s.equals(s2)) cnt++;
-            }
-            System.out.println("element {"+s+"} occurs "+cnt+"times");
         }
     }
 
@@ -109,18 +109,47 @@ public class third {
 
     public static void main(String[] args) throws IOException{
         //все строки
-        List<String> lines = Files.readAllLines(Paths.get("C:\\1\\1.txt"), Charset.forName("Cp1251"));
-        ArrayList<String> arl = new ArrayList<String>(); // для всех слов
-        Set<String> setl = new HashSet<String>(); // для уникальных слов
+        List<String> lines = Files.readAllLines(Paths.get("C:\\ICQ\\1.txt"), Charset.forName("Cp1251"));
+        //ArrayList<String> arl = new ArrayList<String>(); // для всех слов
+        //Set<String> setl = new HashSet<String>(); // для уникальных слов
         // переделать в Map - будет быстрее и красивее работать
-        for(String s : lines){
+        /*for(String s : lines){
             arl.addAll(divide_str(s.split("[\\s\\p{Punct}]+")));
             setl.addAll(divide_str(s.split("[\\s\\p{Punct}]+")));
         }
         System.out.println("---------------task 1---------------------");
         System.out.println("setl.size()="+setl.size());
         task_2(setl);
-        task_3(setl,arl);
+        task_3(setl,arl);*/
+        Comparator<String> valueComparator =
+                new Comparator<String>() {
+                    public int compare(String s1, String s2) {
+                        return ((s1.length()-s2.length()) < 0 ? -1 : (s1.length()-s2.length()) > 0 ? 1 : s1.compareTo(s2));
+                    }
+                };
+        Map<String, Integer> map = new TreeMap<String, Integer>(valueComparator);
+        for(String s : lines){
+            for(String s1 : s.split("[\\s\\p{Punct}]+")){
+                if (!map.containsKey(s1)){
+                    map.put(s1, 1);
+                }
+                else {
+                    map.put(s1, map.get(s1)+1);
+                }
+            }
+        }
+
+        System.out.println("---------------task 1---------------------");
+        System.out.println("map.size()"+map.size());
+        System.out.println("---------------task 2---------------------");
+        for(Map.Entry<String, Integer> m : map.entrySet()){
+            System.out.println(m.getKey());
+        }
+        System.out.println("---------------task 3---------------------");
+        for(Map.Entry<String, Integer> m : map.entrySet()){
+            System.out.println("word is "+m.getKey()+" occurs {"+m.getValue()+"} times");
+        }
+
         task_4(lines);
         task_5(lines);
         task_6(lines);
