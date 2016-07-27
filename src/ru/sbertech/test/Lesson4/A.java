@@ -19,6 +19,6 @@ public class A<T> {
     }
 
     public String getType(){
-        return param.getClass().getTypeName();
+        return param.getClass().getName();
     }
 }

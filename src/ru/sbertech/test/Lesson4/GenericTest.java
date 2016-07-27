@@ -34,7 +34,7 @@ public class GenericTest {
         list.add(new Double(11));
         list.add(new Integer(12));
         list.add(new Double(13));
-        list.forEach(System.out::println); // только для java 1.8 и выше
+        //list.forEach(System.out::println); // только для java 1.8 и выше
         // Integer i = list.get(0); //error
         // Object obj = list.get(0); //norm
     }
