@@ -1,9 +1,8 @@
-package simple;
+package home.sixth;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
-import java.lang.reflect.Proxy;
 
 public class sixth {
 
@@ -58,11 +57,11 @@ public class sixth {
     }
 
     public static void main(String[] args) {
-        System.out.println("Вывести все геттеры класса");
+        System.out.println("Р’С‹РІРµСЃС‚Рё РІСЃРµ РіРµС‚С‚РµСЂС‹ РєР»Р°СЃСЃР°");
         methods();
-        System.out.println("Проверить что все String константы имеют значение = их имени");
+        System.out.println("РџСЂРѕРІРµСЂРёС‚СЊ С‡С‚Рѕ РІСЃРµ String РєРѕРЅСЃС‚Р°РЅС‚С‹ РёРјРµСЋС‚ Р·РЅР°С‡РµРЅРёРµ = РёС… РёРјРµРЅРё");
         strConstants();
-        System.out.println("Реализовать кэширующий прокси");
+        System.out.println("Р РµР°Р»РёР·РѕРІР°С‚СЊ РєСЌС€РёСЂСѓСЋС‰РёР№ РїСЂРѕРєСЃРё");
 
         Calculator c = new SlowCalculator();
         c = CachedProxy.create(Calculator.class, c);

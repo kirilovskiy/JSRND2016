@@ -10,13 +10,13 @@ public class MAIN {
 	
 	public static class PluginManager{
 		private final String pluginRootDirectory;
-		
+
 		public PluginManager(String pluginRootDirectory){
 			this.pluginRootDirectory = pluginRootDirectory;
 		}
-		
-		public Plugin load(String pluginName, String pluginClassName) throws Exception{	
-			File jar = new File(pluginRootDirectory+pluginName+".jar");	
+
+		public Plugin load(String pluginName, String pluginClassName) throws Exception{
+			File jar = new File(pluginRootDirectory+pluginName+".jar");
 			URL jarURL = jar.toURI().toURL();
 			URLClassLoader classLoader = new URLClassLoader(new URL[]{jarURL});
 			Class<?> pluginClass = classLoader.loadClass(pluginClassName);
@@ -26,7 +26,7 @@ public class MAIN {
 	}
 	
 	public static void main(String[] args){
-		PluginManager manager = new PluginManager("C:\\Users\\Анеля\\IdeaProjects\\JSRND2016\\src\\home\\seventh\\plugins\\");
+		PluginManager manager = new PluginManager("C:\\Users\\IdeaProjects\\JSRND2016\\src\\home\\seventh\\plugins\\");
 		try {
 			manager.load("plugin1","plugs.HelloPlugin").doUsefull();
 			manager.load("plugin2","plugs.HelloPlugin").doUsefull();

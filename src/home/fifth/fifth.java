@@ -9,26 +9,19 @@ import java.net.URL;
 public class fifth {
 
     public static void readContent(String url) throws IOException {
-        URL myURL = null;
-        try {
-            myURL = new URL(url);
-            BufferedReader reader = new BufferedReader(new InputStreamReader(myURL.openStream()));
+        URL myURL = new URL(url);
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(myURL.openStream()))) // for autocloseable
+            {
             String line;
             while ((line = reader.readLine()) != null){
                 System.out.println(line);
             }
-            reader.close();
-        } catch (MalformedURLException e) {
-            throw new MalformedURLException();
-        } catch (IOException e){
-            throw new IOException();
         }
-
     }
 
     public static void main(String[] args) {
         String sURL;
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) { // for autocloseable
             while (true) {
                 try {
                     System.out.println("Please input the URL that text do you want see(or word exit to quit program):");

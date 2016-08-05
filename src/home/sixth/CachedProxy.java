@@ -1,4 +1,4 @@
-package simple;
+package home.sixth;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;
@@ -54,7 +54,7 @@ public class CachedProxy  {
                 try {
                     result = method.invoke(code, args);
                     argsToOutput.put(input, result);
-                    System.out.print("не кэш, значение : ");
+                    System.out.print("РЅРµ РёР· РєСЌС€ : ");
                 } catch (InvocationTargetException e) {
                         throw e.getTargetException();
                 }
