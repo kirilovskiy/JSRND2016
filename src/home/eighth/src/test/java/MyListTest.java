@@ -1,3 +1,6 @@
+package home.eighth.src.test.java;
+
+import home.eighth.src.main.java.MyList;
 import org.junit.*;
 
 import java.util.Iterator;

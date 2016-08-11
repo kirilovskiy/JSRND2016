@@ -1,3 +1,5 @@
+package home.eighth.src.main.java;
+
 import java.util.Iterator;
 
 public class MyList<E> implements Iterable<E> {
@@ -10,7 +12,7 @@ public class MyList<E> implements Iterable<E> {
         mas[size] = e;
         size++;
     }
-//переделать удаление
+
     public E remove(int index) {
         if (index > size() || index <0)
             throw new IndexOutOfBoundsException("Index " + index + " is out of bounds");
