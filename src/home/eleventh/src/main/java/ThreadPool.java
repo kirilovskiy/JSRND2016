@@ -137,7 +137,7 @@ public class ThreadPool {
         long f3 = System.currentTimeMillis();
         System.out.println("Time with stream() in milliseconds = " + (f3 - s3) + " count of chars = " + sumChars3);
 
-        // встроенными средствами без разбиения на потоки
+        // встроенными средствами с разбиением на потоки
         int sumChars4 = 0;
         long s4 = System.currentTimeMillis();
         sumChars4 = ListWords.parallelStream().collect(Collectors.summingInt(i -> i.length()));
