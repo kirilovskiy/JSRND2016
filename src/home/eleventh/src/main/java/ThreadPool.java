@@ -53,7 +53,7 @@ public class ThreadPool {
             for (int i = startIndex; i < endIndex; i++) {
                 sumChars += list.get(i).length();
             }
-            System.out.println("Часть с " + startIndex + " по " + endIndex + " мы посчитали с помощью потока " + Thread.currentThread().getName());
+            System.out.println("Часть с " + startIndex + " по " + endIndex + " работал поток " + Thread.currentThread().getName());
         }
     }
 
