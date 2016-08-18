@@ -8,7 +8,7 @@ public class ThreadPool {
 
     public static int readPoolFile(String path) throws IOException {
         if (!(new File(path)).exists()) {
-            System.err.println("File with words isn't exist");
+            System.err.println("File pool isn't exist");
             System.exit(1);
         }
         String line;
@@ -57,15 +57,28 @@ public class ThreadPool {
         }
     }
 
+    public static class MyCallable implements Callable<Integer> {
+        List<String> list;
+
+        public MyCallable(List<String> list) {
+            this.list = list;
+        }
+
+        @Override
+        public Integer call() throws Exception {
+            return list.stream().collect(Collectors.summingInt(i -> i.length()));
+        }
+    }
+
     public static void main(String[] args) {
         List<String> ListWords = new ArrayList<>();
         int sumChars = 0;
         int poolSize = 1;
         int cntProc = Runtime.getRuntime().availableProcessors();
         try{
-            poolSize = readPoolFile("C:/1/pool.txt");
+            poolSize = readPoolFile("data\\pool.txt");
             poolSize = cntProc > poolSize ? cntProc : poolSize;
-            readWordsFile(ListWords, "C:/1/1.txt");
+            readWordsFile(ListWords, "data\\1.txt");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -92,6 +105,27 @@ public class ThreadPool {
         }
         long f1 = System.currentTimeMillis();
         System.out.println("Time with own threadpool in milliseconds = "+ (f1-s1) + " count of chars = " + sumChars);
+
+        // встроенный пул с потоками
+        int sumChars2 = 0;
+        ExecutorService ex = Executors.newFixedThreadPool(poolSize);
+        List<Future<Integer>> list = new ArrayList<>();
+        list.add(ex.submit(new MyCallable(ListWords)));
+
+        long s2 = System.currentTimeMillis();
+        for(Future<Integer> future : list){
+            while(!future.isDone()){/*ждем пока задача не выполнится*/}
+            try {
+                sumChars2+=future.get();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            }
+        }
+        ex.shutdown();
+        long f2 = System.currentTimeMillis();
+        System.out.println("Time with ExecutorService in milliseconds= "+ (f2-s2) + " count of chars = " + sumChars2);
 
         // встроенными средствами без разбиения на потоки
         int sumChars3 = 0;
