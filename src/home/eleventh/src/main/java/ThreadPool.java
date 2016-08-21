@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 import java.util.concurrent.*;
 import java.util.stream.Collectors;
-
+/* Наброски пула, окончательная версия в файле first.Pool*/
 
 public class ThreadPool {
 
