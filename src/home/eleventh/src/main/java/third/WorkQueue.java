@@ -27,7 +27,7 @@ public class WorkQueue {
 
     private class PoolWorker extends Thread {
         public void run() {
-            System.out.println("стартанул поток " + Thread.currentThread().getName());
+            System.out.println("СЃС‚Р°СЂС‚Р°РЅСѓР» РїРѕС‚РѕРє " + Thread.currentThread().getName());
             Runnable r;
             while (true) {
                 synchronized (queue) {
@@ -35,7 +35,7 @@ public class WorkQueue {
                         try {
                             queue.wait();
                         } catch (InterruptedException e) {
-                            System.out.println("Ошибка " + e.getMessage());
+                            System.out.println("РћС€РёР±РєР° " + e.getMessage());
                             interrupt();
                         }
                     }
@@ -45,7 +45,7 @@ public class WorkQueue {
                 try {
                     r.run();
                 } catch (RuntimeException e){
-                    System.out.println("Ошибка " + e.getMessage());
+                    System.out.println("РћС€РёР±РєР° " + e.getMessage());
                 }
             }
         }

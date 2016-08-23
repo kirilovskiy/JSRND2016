@@ -22,14 +22,14 @@ public class MesSystem {
     }
 
     public static class MyRunnable implements Runnable{
-    	private String mes;
-    	
-    	public MyRunnable(String mes) {
-    		this.mes = mes;
-		}
+        private String mes;
+
+        public MyRunnable(String mes) {
+            this.mes = mes;
+        }
         @Override
         public void run() {
-        	System.out.println("Выполнял поток " + Thread.currentThread().getName()+"; Сообщение - '" + mes +"\'");
+            System.out.println("Р’С‹РїРѕР»РЅСЏР» РїРѕС‚РѕРє " + Thread.currentThread().getName()+"; РЎРѕРѕР±С‰РµРЅРёРµ - '" + mes +"\'");
         }
     }
 
@@ -42,8 +42,8 @@ public class MesSystem {
         }
         WorkQueue workQueue = new WorkQueue(poolSize);
         for(int i = 0; i < 100; i++){
-            MyRunnable myRunnable = new MyRunnable("Номер задачи " + i);
-            workQueue.execute(myRunnable);        
+            MyRunnable myRunnable = new MyRunnable("РќРѕРјРµСЂ Р·Р°РґР°С‡Рё " + i);
+            workQueue.execute(myRunnable);
         }
     }
 }
