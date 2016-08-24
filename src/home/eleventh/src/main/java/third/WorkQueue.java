@@ -6,6 +6,11 @@ public class WorkQueue {
     private final int cntThreads;
     private final PoolWorker[] threads;
     private final LinkedList queue;
+    private volatile boolean endFlag = false;
+
+    public boolean isEndFlag() {
+        return endFlag;
+    }
 
     public WorkQueue(int cntThreads) {
         this.cntThreads = cntThreads;
@@ -29,7 +34,8 @@ public class WorkQueue {
         public void run() {
             System.out.println("стартанул поток " + Thread.currentThread().getName());
             Runnable r;
-            while (true) {
+
+            while (!endFlag) {
                 synchronized (queue) {
                     while (queue.isEmpty()) {
                         try {
@@ -49,6 +55,22 @@ public class WorkQueue {
                 }
             }
         }
+    }
+
+    public boolean EndFlag(){
+        while (!queue.isEmpty()){
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+        synchronized (this) {
+            endFlag = true;
+            notifyAll();
+        }
+        return true;
     }
 
 }
