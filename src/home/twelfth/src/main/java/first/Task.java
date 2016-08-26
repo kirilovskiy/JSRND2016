@@ -1,8 +1,8 @@
-package first;
+package home.twelfth.src.main.java.first;
 
 import java.util.concurrent.Callable;
 
-class Task<T> {
+public class Task<T> {
     private Callable<? extends T> callable;
     private volatile T valueCall;
     private RuntimeException exception;

@@ -1,4 +1,4 @@
-package second;
+package home.twelfth.src.main.java.second;
 
 public interface Context {
     int getCompletedTaskCount();

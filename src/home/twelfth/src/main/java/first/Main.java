@@ -1,4 +1,4 @@
-package first;
+package home.twelfth.src.main.java.first;
 
 import third.WorkQueue;
 
