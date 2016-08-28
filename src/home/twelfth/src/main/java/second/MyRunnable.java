@@ -1,4 +1,4 @@
-package home.twelfth.src.main.java.second;
+package second;
 
 public class MyRunnable implements Runnable {
 	private Runnable innerRun;

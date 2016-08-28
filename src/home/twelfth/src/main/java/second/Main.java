@@ -1,5 +1,4 @@
-package home.twelfth.src.main.java.second;
-
+package second;
 public class Main {
 
     public static void main(String[] args) {

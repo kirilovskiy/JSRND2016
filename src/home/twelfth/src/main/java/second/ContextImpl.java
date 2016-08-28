@@ -1,4 +1,4 @@
-package home.twelfth.src.main.java.second;
+package second;
 
 import java.util.concurrent.Future;
 

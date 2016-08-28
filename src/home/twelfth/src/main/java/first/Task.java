@@ -1,4 +1,4 @@
-package home.twelfth.src.main.java.first;
+package first;
 
 import java.util.concurrent.Callable;
 

@@ -1,4 +1,4 @@
-package home.twelfth.src.main.java.second;
+package second;
 public interface ExecutionManager {
     Context execute(Runnable callback, Runnable... tasks);
 }
