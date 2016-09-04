@@ -1,0 +1,131 @@
+"C:\Program Files\Java\jdk1.8.0_101\bin\java" -XX:+PrintCompilation -Didea.launcher.port=7533 "-Didea.launcher.bin.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.1\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_101\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\rt.jar;C:\Users\Анеля\IdeaProjects\JSRND2016\out\production\JSRND2016;C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.1\lib\junit-4.12.jar;C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.1\lib\hamcrest-core-1.3.jar;C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.1\lib\idea_rt.jar" com.intellij.rt.execution.application.AppMain home.fifteenth.src.main.Main
+     82    1       3       java.lang.Math::min (11 bytes)
+     83    2       3       java.lang.String::hashCode (55 bytes)
+     85    3       3       java.lang.Character::toLowerCase (9 bytes)
+     85    4       3       java.lang.CharacterData::of (120 bytes)
+     85    5       3       java.lang.CharacterDataLatin1::toLowerCase (39 bytes)
+     85    6       3       java.lang.CharacterDataLatin1::getProperties (11 bytes)
+     86    7       3       java.lang.String::indexOf (70 bytes)
+     86   10       3       java.lang.Object::<init> (1 bytes)
+     86    8       3       java.lang.String::<init> (82 bytes)
+     86    9       3       java.util.Arrays::copyOfRange (63 bytes)
+     87   11       3       java.lang.String::charAt (29 bytes)
+     87   12       3       java.lang.String::length (6 bytes)
+     87   13       3       java.lang.Character::toUpperCase (6 bytes)
+     87   14       3       java.lang.Character::toUpperCase (9 bytes)
+     87   16     n 0       java.lang.System::arraycopy (native)   (static)
+     88   15       3       java.util.TreeMap::parentOf (13 bytes)
+     91   17       3       java.lang.AbstractStringBuilder::ensureCapacityInternal (16 bytes)
+     91   18       3       java.lang.AbstractStringBuilder::append (29 bytes)
+     91   19       3       java.lang.StringBuilder::append (8 bytes)
+     91   20       4       java.lang.String::charAt (29 bytes)
+     92   21       3       java.io.WinNTFileSystem::isSlash (18 bytes)
+     92   22  s    3       java.lang.StringBuffer::append (13 bytes)
+     92   11       3       java.lang.String::charAt (29 bytes)   made not entrant
+     92   23       3       java.lang.String::getChars (62 bytes)
+     93   24       3       java.lang.Character::toLowerCase (6 bytes)
+     93   25       3       java.lang.AbstractStringBuilder::append (50 bytes)
+     93   26       1       java.io.File::getPath (5 bytes)
+     94   27       3       java.lang.String::equals (81 bytes)
+     94   28       3       java.lang.System::getSecurityManager (4 bytes)
+     94   29       3       java.util.Arrays::copyOf (19 bytes)
+     96   30       3       java.lang.StringBuilder::append (8 bytes)
+     97   31       1       java.lang.Object::<init> (1 bytes)
+     97   10       3       java.lang.Object::<init> (1 bytes)   made not entrant
+     98   32       1       java.lang.String::length (6 bytes)
+     98   12       3       java.lang.String::length (6 bytes)   made not entrant
+     98   33       3       java.util.HashMap::hash (20 bytes)
+     98   34       3       java.lang.String::toLowerCase (439 bytes)
+    100   36       3       java.lang.AbstractStringBuilder::<init> (12 bytes)
+    100   35       3       java.lang.String::indexOf (7 bytes)
+    100   37       3       sun.nio.cs.SingleByte$Encoder::encode (32 bytes)
+    100   38       3       java.lang.String::startsWith (72 bytes)
+    101   39       1       java.nio.Buffer::position (5 bytes)
+    102   40       1       java.nio.Buffer::limit (5 bytes)
+    102   41       3       java.lang.CharacterDataLatin1::toUpperCase (53 bytes)
+    102   42       1       java.net.URL::getProtocol (5 bytes)
+    102   43       1       java.net.URL::getAuthority (5 bytes)
+    103   44       1       java.net.URL::getPath (5 bytes)
+    103   45  s    1       java.util.Vector::size (5 bytes)
+    103   46       3       java.lang.StringBuilder::toString (17 bytes)
+    104   47       1       java.lang.ThreadLocal::access$400 (5 bytes)
+    104   48       3       java.io.WinNTFileSystem::normalize (143 bytes)
+    105   49       1       java.net.URL::getFile (5 bytes)
+    105   50       3       java.nio.Buffer::position (43 bytes)
+    106   51       1       java.util.ArrayList::size (5 bytes)
+    106   52       3       java.lang.String::substring (79 bytes)
+    106   53       3       java.nio.ByteBuffer::arrayOffset (35 bytes)
+    107   54       3       java.nio.CharBuffer::arrayOffset (35 bytes)
+    107   55       3       java.lang.AbstractStringBuilder::expandCapacity (50 bytes)
+    108   56       3       java.util.jar.Attributes$Name::isValid (32 bytes)
+    108   57       3       java.util.jar.Attributes$Name::isAlpha (30 bytes)
+    111   58       1       java.lang.ref.Reference::get (5 bytes)
+    115   59       3       java.lang.String::startsWith (7 bytes)
+    116   60       3       java.util.concurrent.ConcurrentHashMap::tabAt (21 bytes)
+    117   62       3       java.lang.String::lastIndexOf (52 bytes)
+    117   61     n 0       sun.misc.Unsafe::getObjectVolatile (native)   
+    117   63       3       java.io.WinNTFileSystem::isLetter (30 bytes)
+    119   64       3       java.lang.StringBuilder::<init> (7 bytes)
+    119   66       3       java.util.HashMap::putVal (300 bytes)
+    120   65       3       java.util.HashMap::put (13 bytes)
+    121   67       3       java.util.HashMap$Node::<init> (26 bytes)
+    121   68       3       java.lang.Number::<init> (5 bytes)
+    121   69       3       java.lang.Integer::<init> (10 bytes)
+    121   70       3       java.util.HashMap::newNode (13 bytes)
+    121   77       3       java.lang.Integer::stringSize (21 bytes)
+    122   78       3       java.lang.Integer::getChars (131 bytes)
+    122   71       3       java.util.HashMap::afterNodeInsertion (1 bytes)
+    122   72       3       java.lang.Integer::valueOf (32 bytes)
+    122   73       3       java.lang.Integer::hashCode (8 bytes)
+    122   74       3       java.lang.Integer::hashCode (2 bytes)
+    123   80       4       java.lang.AbstractStringBuilder::ensureCapacityInternal (16 bytes)
+    123   79       1       java.util.HashMap::afterNodeInsertion (1 bytes)
+    123   71       3       java.util.HashMap::afterNodeInsertion (1 bytes)   made not entrant
+    123   75       3       java.lang.StringBuilder::append (8 bytes)
+    123   76       3       java.lang.AbstractStringBuilder::append (62 bytes)
+    125   81       3       java.util.HashMap::getNode (148 bytes)
+    126   83       4       java.lang.Integer::getChars (131 bytes)
+    126   82       4       java.util.Arrays::copyOfRange (63 bytes)
+    126   17       3       java.lang.AbstractStringBuilder::ensureCapacityInternal (16 bytes)   made not entrant
+    126   86       4       java.lang.StringBuilder::toString (17 bytes)
+    128   78       3       java.lang.Integer::getChars (131 bytes)   made not entrant
+    128   87       4       java.util.HashMap::putVal (300 bytes)
+    128    9       3       java.util.Arrays::copyOfRange (63 bytes)   made not entrant
+    128   88       4       java.lang.String::<init> (82 bytes)
+    130   46       3       java.lang.StringBuilder::toString (17 bytes)   made not entrant
+    130   92       4       java.lang.AbstractStringBuilder::append (62 bytes)
+    131    8       3       java.lang.String::<init> (82 bytes)   made not entrant
+    131   66       3       java.util.HashMap::putVal (300 bytes)   made not entrant
+    131   95       4       java.lang.Integer::valueOf (32 bytes)
+    131   96       4       java.lang.Integer::hashCode (8 bytes)
+    132   73       3       java.lang.Integer::hashCode (8 bytes)   made not entrant
+    132   89       4       java.lang.String::getChars (62 bytes)
+    132   72       3       java.lang.Integer::valueOf (32 bytes)   made not entrant
+    132   84       4       java.lang.AbstractStringBuilder::append (50 bytes)
+    133   23       3       java.lang.String::getChars (62 bytes)   made not entrant
+    133   85       4       java.lang.StringBuilder::append (8 bytes)
+    136   25       3       java.lang.AbstractStringBuilder::append (50 bytes)   made not entrant
+    136   97 %     4       java.lang.Integer::stringSize @ 2 (21 bytes)
+    137   30       3       java.lang.StringBuilder::append (8 bytes)   made not entrant
+    137   90       4       java.lang.StringBuilder::<init> (7 bytes)
+    138   91       4       java.util.HashMap::put (13 bytes)
+    138   64       3       java.lang.StringBuilder::<init> (7 bytes)   made not entrant
+    138   93       4       java.lang.StringBuilder::append (8 bytes)
+    139   76       3       java.lang.AbstractStringBuilder::append (62 bytes)   made not entrant
+    139   94       4       java.util.HashMap::newNode (13 bytes)
+    140   70       3       java.util.HashMap::newNode (13 bytes)   made not entrant
+    140   98 %     4       java.util.HashMap::resize @ 154 (359 bytes)
+    141   65       3       java.util.HashMap::put (13 bytes)   made not entrant
+    147   75       3       java.lang.StringBuilder::append (8 bytes)   made not entrant
+    149   99       4       java.util.HashMap::resize (359 bytes)
+    154  100 %     3       home.fifteenth.src.main.Main::main @ 13 (53 bytes)
+    155  101       3       home.fifteenth.src.main.Main::main (53 bytes)
+    155   92       4       java.lang.AbstractStringBuilder::append (62 bytes)   made not entrant
+    155   83       4       java.lang.Integer::getChars (131 bytes)   made not entrant
+    156  104       4       java.lang.Integer::stringSize (21 bytes)
+    156  103       3       java.lang.Integer::getChars (131 bytes)
+    156  102       3       java.lang.AbstractStringBuilder::append (62 bytes)
+    157  105       4       java.lang.Integer::getChars (131 bytes)
+    157   77       3       java.lang.Integer::stringSize (21 bytes)   made not entrant
+    157  106       4       java.lang.AbstractStringBuilder::append (62 bytes)
+    162  103       3       java.lang.Integer::getChars (131 bytes)   made not entrant
