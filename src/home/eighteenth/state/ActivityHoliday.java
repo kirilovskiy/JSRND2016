@@ -5,8 +5,8 @@ public class ActivityHoliday implements Activity {
 	
 	@Override
 	public void doSomething(Human context) {
-		if (count < 3){
-			System.out.println("having holidays");
+		if (count < 2){
+			System.out.println("having holidays...");
 			count++;
 		} else {
 			context.setState(new ActivityWork());
