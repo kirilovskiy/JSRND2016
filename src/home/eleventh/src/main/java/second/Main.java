@@ -1,4 +1,4 @@
-package second;
+package home.eleventh.src.main.java.second;
 
 import java.io.BufferedReader;
 import java.io.File;

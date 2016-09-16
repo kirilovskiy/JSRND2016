@@ -1,5 +1,4 @@
-package first;
-
+package home.eleventh.src.main.java.first;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;

@@ -1,4 +1,6 @@
-import first.MyCallable;
+package home.eleventh.src.test.java;
+
+import home.eleventh.src.main.java.first.MyCallable;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -9,8 +11,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.*;
 
-import static first.Pool.readPoolFile;
-import static first.Pool.readWordsFile;
+import static home.eleventh.src.main.java.first.Pool.readPoolFile;
+import static home.eleventh.src.main.java.first.Pool.readWordsFile;
 
 public class ThreadPoolTest {
     private List<String> ListWords;
