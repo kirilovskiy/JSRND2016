@@ -12,9 +12,9 @@ public class CachedProxy implements InvocationHandler {
 
     public CachedProxy(Cachable obj) {
         this.obj = obj;
-        try (Connection conn = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test", "sa", "")) {
+        try (Connection conn = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test", "sa", "");
             Statement statement = conn.createStatement();
-            ResultSet resultSet = statement.executeQuery("select * from results");
+            ResultSet resultSet = statement.executeQuery("select * from results");){
 
             while (resultSet.next()) {
                 mapFibonachi.put(resultSet.getInt(1), Long.valueOf(resultSet.getString(2)));
@@ -36,8 +36,8 @@ public class CachedProxy implements InvocationHandler {
             System.out.println("value from cache" + result);
         } else {
             result = (Long) method.invoke(obj, args);
-            try (Connection conn = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test", "sa", "")) {
-                PreparedStatement statement = conn.prepareStatement("insert into results values(?,?)");
+            try (Connection conn = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test", "sa", "");
+                PreparedStatement statement = conn.prepareStatement("insert into results values(?,?)");) {
                 statement.setInt(1,n);
                 statement.setString(2,Long.toString(result));
                 statement.execute();
