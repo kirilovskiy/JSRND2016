@@ -8,7 +8,7 @@ public class proxyServerApp {
 		Set<String> listUrl = WebServer.initPages().keySet();
 
         for(int i = 1; i < 4; i++) {
-            System.out.println("� request" + i);
+            System.out.println("№ request" + i);
             for(String url: listUrl) {
                 System.out.println("[" + content.getSitePage(url) + "]");
             }
