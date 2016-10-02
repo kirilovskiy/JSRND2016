@@ -13,6 +13,21 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../Examples/src/com/company/Aaaa.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Examples/src/com/company/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/JSRND2016.iml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/sonar-project.properties">
           <value>
             <set />
@@ -28,12 +43,137 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/home/bigAppl/bigAppl.iml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/bigAppl/main/Logic/Account.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/bigAppl/main/Logic/Client.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/bigAppl/main/Logic/Document.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/bigAppl/main/MainApp.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/bigAppl/main/jdbcWork/AccountDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/bigAppl/main/jdbcWork/ClientDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/bigAppl/main/jdbcWork/DocumentDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/bigAppl/main/logic/Client.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/bigAppl/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/bigAppl/resource/context.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/home/eighteenth/command/Command.java">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/home/eighth/src/test/java/MyListTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/home/seventeenth/proxy/second/proxyServerApp.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/springAppl/lesson22.iml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/springAppl/main/Client.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/springAppl/main/ContextFile.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/springAppl/main/Logic/Account.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/springAppl/main/Logic/Client.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/springAppl/main/Logic/Document.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/springAppl/main/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/springAppl/main/MainApp.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/springAppl/main/as.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/springAppl/main/java/Client.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/springAppl/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/springAppl/resource/context.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/springAppl/springAppl.iml">
           <value>
             <set />
           </value>
@@ -64,6 +204,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/home/twentieth/src/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/twentieth/src/cacheApp.java">
           <value>
             <set />
           </value>
@@ -104,6 +249,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/home/twentieth/src/slowCalculator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/ru/sbertech/test/lesson22/main/java/App.java">
           <value>
             <set />
           </value>
