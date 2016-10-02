@@ -11,5 +11,5 @@ public interface ClientDao {
     Client getClient(long id);
     List<Client> listClients();
     void del(long id);
-    void upd(long id);
+    void upd(long id, String name);
 }

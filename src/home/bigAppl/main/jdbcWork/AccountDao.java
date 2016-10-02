@@ -12,6 +12,7 @@ public interface AccountDao {
     void create(long id, String accNumber, long clientId, BigDecimal saldo);
     Account getAccount(long id);
     List<Account> listAccounts();
+    List<Account> listAccounts(long clientId);
     void del(long id);
     void upd(long id, String accNumber, long clientId, BigDecimal saldo);
 }

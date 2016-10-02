@@ -73,7 +73,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/home/bigAppl/main/jdbcWork/AccountDaoImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/bigAppl/main/jdbcWork/AccountMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/home/bigAppl/main/jdbcWork/ClientDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/bigAppl/main/jdbcWork/ClientJDBCWork.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/bigAppl/main/jdbcWork/ClientMapper.java">
           <value>
             <set />
           </value>
@@ -83,7 +103,37 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/home/bigAppl/main/jdbcWork/DocumentDaoImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/bigAppl/main/jdbcWork/DocumentMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/bigAppl/main/logic/Account.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/home/bigAppl/main/logic/Client.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/bigAppl/main/logic/Document.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/bigAppl/main/util.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/bigAppl/main/utilContext.java">
           <value>
             <set />
           </value>

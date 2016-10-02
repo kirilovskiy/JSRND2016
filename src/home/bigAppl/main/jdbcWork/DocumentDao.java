@@ -14,6 +14,7 @@ public interface DocumentDao {
     void create(long id, long accDTId, long accCTId, BigDecimal summa, String purpose, Date docDate);
     Document getDocument(long id);
     List<Document> listDocuments();
+    List<Document> listDocuments(Account account);
     void del(long id);
     void upd(long id, long accDTId, long accCTId, BigDecimal summa, String purpose, Date docDate);
 }
