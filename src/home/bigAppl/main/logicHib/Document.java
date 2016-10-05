@@ -1,22 +1,41 @@
-package main.logic;
+package main.logicHib;
 
 import main.jdbcWork.DocumentDaoImpl;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
 
+@Entity
+@Table(name = "DOCUMENTS")
 public class Document {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID")
     private long id;
+
+    @ManyToOne
+    @JoinColumn(name = "ACCDT", referencedColumnName = "ID")
     private Account accDT;
+
+    @ManyToOne
+    @JoinColumn(name = "ACCCT", referencedColumnName = "ID")
     private Account accCT;
+
+    @Column(name = "SUMMA")
     private BigDecimal summa;
+
+    @Column(name = "PURPOSE")
     private String purpose;
+
+    @Column(name = "DOCDATE")
+    @Temporal(value = TemporalType.DATE)
     private Date docDate;
+
     private DocumentDaoImpl documentDaoImpl;
 
-    public Document() {
-    }
+    public Document() {}
 
     public void setDocumentDaoImpl(DocumentDaoImpl documentDaoImpl) {
         this.documentDaoImpl = documentDaoImpl;

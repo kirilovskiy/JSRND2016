@@ -3,9 +3,15 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
     <!-- Здесь должны находиться объявления компонентов -->
-    <bean id="client" class="main.logic.Client" scope="prototype"/>
-    <bean id="account" class="main.logic.Account" scope="prototype"/>
-    <bean id="document" class="main.logic.Document" scope="prototype"/>
+    <bean id="client" class="main.logic.Client" scope="prototype">
+        <property name="ClientDaoImpl" ref="ClientDaoImpl"/>
+    </bean>
+    <bean id="account" class="main.logic.Account" scope="prototype">
+        <property name="AccountDaoImpl" ref="AccountDaoImpl"/>
+    </bean>
+    <bean id="document" class="main.logic.Document" scope="prototype">
+        <property name="DocumentDaoImpl" ref="DocumentDaoImpl"/>
+    </bean>
 
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="org.h2.Driver" />

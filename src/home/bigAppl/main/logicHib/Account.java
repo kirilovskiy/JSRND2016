@@ -1,14 +1,30 @@
-package main.logic;
+package main.logicHib;
 
 import main.jdbcWork.AccountDaoImpl;
 
+import javax.persistence.*;
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class Account {
+@Entity
+@Table(name = "ANNOTATIONS")
+public class Account implements Serializable{
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID", unique = true, nullable = false)
     private long id;
+
+    @Column(name = "ACCNUMBER", unique = true, nullable = false, length = 2000)
     private String accNumber;
+
+    @ManyToOne
+    @JoinColumn(name = "CLIENTID", referencedColumnName = "ID")
     private Client client;
+
+    @Column(name = "SALDO")
     private BigDecimal saldo;
+
     public AccountDaoImpl accountDaoImpl;
 
     public void setAccountDaoImpl(AccountDaoImpl accountDaoImpl) {

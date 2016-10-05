@@ -51,4 +51,10 @@ public class ClientDaoImpl implements ClientDao {
         System.out.println("update record clients with id = " + id);
     }
 
+    public void merge(long id, String name) {
+        String SQL = "MERGE INTO clients KEY(ID) VALUES(?, ?)";
+        jdbcTemplate.update(SQL, id, name);
+        System.out.println("----merge clients----");
+    }
+
 }

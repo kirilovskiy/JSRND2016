@@ -1,7 +1,6 @@
 package main.jdbcWork;
 
 import main.logic.Account;
-import main.logic.Client;
 
 import javax.sql.DataSource;
 import java.math.BigDecimal;

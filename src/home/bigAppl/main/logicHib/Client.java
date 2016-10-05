@@ -1,9 +1,19 @@
-package main.logic;
+package main.logicHib;
 
 import main.jdbcWork.ClientDaoImpl;
 
-public class Client {
+import javax.persistence.*;
+import java.io.Serializable;
+
+@Entity
+@Table(name = "CLIENTS")
+public class Client implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID")
     private long id;
+
+    @Column(name = "NAME", length = 2000)
     private String name;
 
     public ClientDaoImpl clientDaoImpl;

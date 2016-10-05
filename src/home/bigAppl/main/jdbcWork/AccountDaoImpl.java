@@ -7,7 +7,7 @@ import javax.sql.DataSource;
 import java.math.BigDecimal;
 import java.util.List;
 
-public class AccountDaoImpl implements AccountDao {
+    public class AccountDaoImpl implements AccountDao {
     private DataSource DS;
     private JdbcTemplate jdbcTemplate;
 
@@ -33,7 +33,7 @@ public class AccountDaoImpl implements AccountDao {
 
     @Override
     public List<Account> listAccounts() {
-        String sql = "select * from accounts";
+        String sql = "select * from accounts order by id";
         List<Account> listAccounts = jdbcTemplate.query(sql, new AccountMapper());
         return listAccounts;
     }
@@ -57,5 +57,11 @@ public class AccountDaoImpl implements AccountDao {
         String sql = "update accounts set accNumber = ?, clientId = ?, saldo =?  where id = ?";
         jdbcTemplate.update(sql, accNumber, clientId, saldo , id);
         System.out.println("update record clients with id = " + id);
+    }
+
+    public void merge(long id, String accNum, long clientId, BigDecimal saldo) {
+        String SQL = "MERGE INTO accounts KEY(ID) VALUES(?, ?, ?, ?)";
+        jdbcTemplate.update(SQL, id, accNum, clientId, saldo);
+        System.out.println("----update account----");
     }
 }

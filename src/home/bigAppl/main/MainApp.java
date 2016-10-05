@@ -44,6 +44,12 @@ public class MainApp {
             System.out.println("Start saldo: " + account.getSaldo());
         }*/
 
+        List<Account> accounts = accountJDBC.listAccounts();
+        for(Account account : accounts){
+            System.out.println(account.toString());
+        }
+
+        System.out.println("--------------------------------------------");
 
         Account account = accountJDBC.getAccount(2);
         List<Document> documents = documentJDBC.listDocuments(account);
@@ -65,10 +71,16 @@ public class MainApp {
                 summa = summa.add(document.getSumma());
             }
             document.moneyTransfer();
-            System.out.println(document.getAccDT().getClient().getName()+" "+document.getAccDT().getSaldo());
-            System.out.println(document.getAccCT().getClient().getName()+" "+document.getAccCT().getSaldo());
+            document.saveAccounts();
         }
 
         System.out.println("balance document processing: " + summa);
+
+        System.out.println("--------------------------------------------");
+        accounts = accountJDBC.listAccounts();
+        for(Account a : accounts){
+            System.out.println(a.toString());
+        }
+
     }
 }
