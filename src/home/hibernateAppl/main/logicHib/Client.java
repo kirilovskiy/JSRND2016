@@ -1,24 +1,25 @@
 package main.logicHib;
 
-import main.jdbcWork.ClientDaoImpl;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "CLIENTS")
+@Table(name = "clients")
 public class Client implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ID")
+    @Column(name = "id")
     private long id;
 
-    @Column(name = "NAME", length = 2000)
+    @Column(name = "name", length = 2000)
     private String name;
 
-    public ClientDaoImpl clientDaoImpl;
-
     public Client() {
+    }
+
+    public Client(String name) {
+        this.name = name;
     }
 
     public long getId() {
@@ -43,13 +44,5 @@ public class Client implements Serializable {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';
-    }
-
-    public void setClientDaoImpl(ClientDaoImpl clientDaoImpl) {
-        this.clientDaoImpl = clientDaoImpl;
-    }
-
-    public void save(){
-        clientDaoImpl.merge(id,name);
     }
 }

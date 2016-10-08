@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: javax.transaction:jta:1.0.1B">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/javax/transaction/jta/1.0.1B/jta-1.0.1B.jar!/" />
+      <root url="file://$MAVEN_REPOSITORY$/javax/transaction/jta/1.0.1B" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$MAVEN_REPOSITORY$/javax/transaction/jta/1.0.1B/jta-1.0.1B-javadoc.jar!/" />

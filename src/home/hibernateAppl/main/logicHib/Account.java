@@ -1,35 +1,27 @@
 package main.logicHib;
 
-import main.jdbcWork.AccountDaoImpl;
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
 @Entity
-@Table(name = "ANNOTATIONS")
+@Table(name = "accounts")
 public class Account implements Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ID", unique = true, nullable = false)
+    @Column(name = "id", unique = true, nullable = false)
     private long id;
 
-    @Column(name = "ACCNUMBER", unique = true, nullable = false, length = 2000)
+    @Column(name = "accNumber", unique = true, nullable = false, length = 2000)
     private String accNumber;
 
     @ManyToOne
-    @JoinColumn(name = "CLIENTID", referencedColumnName = "ID")
+    @JoinColumn(name = "clientId", referencedColumnName = "id")
     private Client client;
 
-    @Column(name = "SALDO")
+    @Column(name = "saldo")
     private BigDecimal saldo;
-
-    public AccountDaoImpl accountDaoImpl;
-
-    public void setAccountDaoImpl(AccountDaoImpl accountDaoImpl) {
-        this.accountDaoImpl = accountDaoImpl;
-    }
 
     public Account() {
     }
@@ -66,8 +58,7 @@ public class Account implements Serializable{
         this.saldo = saldo;
     }
 
-    public void setData(long id, String accNumber, Client client, BigDecimal saldo){
-        this.id = id;
+    public void setData(String accNumber, Client client, BigDecimal saldo){
         this.accNumber = accNumber;
         this.client = client;
         this.saldo = saldo;
@@ -81,11 +72,6 @@ public class Account implements Serializable{
                 ", client=" + client +
                 ", saldo=" + saldo +
                 '}';
-    }
-
-    public void save(){
-        client.save();
-        accountDaoImpl.merge(id, accNumber, client.getId(), saldo);
     }
 
 }
