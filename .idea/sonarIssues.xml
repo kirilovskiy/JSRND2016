@@ -18,6 +18,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$USER_HOME$/Downloads/SPRING_WEB_MVC/javaschool_mvc/web/src/main/webapp/WEB-INF/web.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../Examples/src/com/company/Aaaa.java">
           <value>
             <set />
@@ -268,12 +273,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/home/hibernateAppl/main/HomeController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/home/hibernateAppl/main/Main.java">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/home/hibernateAppl/main/MainApp.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/hibernateAppl/main/controllers/ClientController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/hibernateAppl/main/controllers/HomeController.java">
           <value>
             <set />
           </value>
@@ -373,7 +393,32 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/home/hibernateAppl/test/main/controllers/ClientControllerTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/home/hibernateAppl/test/main/dao/AccountDaoImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/hibernateAppl/webapp/WEB-INF/mvc-servlet.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/hibernateAppl/webapp/WEB-INF/views/home.jsp">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/hibernateAppl/webapp/WEB-INF/web.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/hibernateAppl/webapp/index.html">
           <value>
             <set />
           </value>
