@@ -1,6 +1,6 @@
-package main.logic;
+package logic;
 
-import main.jdbcWork.ClientDaoImpl;
+import jdbcWork.ClientDaoImpl;
 
 public class Client {
     private long id;

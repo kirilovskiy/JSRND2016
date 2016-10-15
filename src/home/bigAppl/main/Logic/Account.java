@@ -1,6 +1,6 @@
-package main.logic;
+package logic;
 
-import main.jdbcWork.AccountDaoImpl;
+import jdbcWork.AccountDaoImpl;
 
 import java.math.BigDecimal;
 

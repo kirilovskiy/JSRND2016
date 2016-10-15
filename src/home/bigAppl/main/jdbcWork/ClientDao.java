@@ -1,6 +1,6 @@
-package main.jdbcWork;
+package jdbcWork;
 
-import main.logic.Client;
+import logic.Client;
 
 import javax.sql.DataSource;
 import java.util.List;

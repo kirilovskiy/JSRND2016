@@ -1,7 +1,7 @@
-package main.jdbcWork;
+package jdbcWork;
 
-import main.logic.Account;
-import main.logic.Document;
+import logic.Account;
+import logic.Document;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import javax.sql.DataSource;

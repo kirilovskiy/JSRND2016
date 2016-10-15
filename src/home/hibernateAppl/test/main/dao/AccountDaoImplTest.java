@@ -1,5 +1,7 @@
 package main.dao;
 
+import main.dao.AccountDaoImpl;
+import main.dao.ClientDaoImpl;
 import main.logicHib.Account;
 import main.logicHib.Client;
 import java.math.BigDecimal;

@@ -4,10 +4,11 @@ import main.logicHib.Account;
 import main.logicHib.Client;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import main.logicHib.Account;
 
 import java.util.List;
 
-public class ClientDaoImpl implements ClientDao {
+public class AccountDaoImpl implements AccountDao{
     private SessionFactory sessionFactory;
 
     public void setSessionFactory(SessionFactory sessionFactory) {
@@ -15,30 +16,30 @@ public class ClientDaoImpl implements ClientDao {
     }
 
     @Override
-    public long saveIntoDb(Client client) {
+    public long saveIntoDb(Account account) {
         Session session = sessionFactory.getCurrentSession();
         session.beginTransaction();
-        session.saveOrUpdate(client);
+        session.saveOrUpdate(account);
         session.getTransaction().commit();
         session.close();
-        return client.getId();
+        return account.getId();
     }
 
     @Override
-    public void deleteFromDb(Client client) {
+    public void deleteFromDb(Account account) {
         Session session = sessionFactory.getCurrentSession();
         session.beginTransaction();
-        session.delete(client);
+        session.delete(account);
         session.getTransaction().commit();
         session.close();
     }
 
     @Override
-    public Client getClientFromDb(long id) {
+    public Account getAccountFromDb(long id) {
         Session session = sessionFactory.getCurrentSession();
         session.beginTransaction();
         try {
-            return session.get(Client.class,id);
+            return session.get(Account.class,id);
         } finally {
             session.getTransaction().commit();
             session.close();
@@ -46,10 +47,10 @@ public class ClientDaoImpl implements ClientDao {
     }
 
     @Override
-    public List<Client> getClientList() {
+    public List<Account> getAccountList() {
         Session session = sessionFactory.openSession();
-        List<Client> clients = session.createQuery("from Client order by id").list();
+        List<Account> accounts = session.createQuery("from Account order by id").list();
         session.close();
-        return clients;
+        return accounts;
     }
 }

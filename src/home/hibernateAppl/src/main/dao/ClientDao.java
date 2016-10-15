@@ -1,6 +1,7 @@
 package main.dao;
 
 import main.logicHib.Client;
+import main.logicHib.Client;
 
 import java.util.List;
 

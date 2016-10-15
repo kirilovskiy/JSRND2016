@@ -1,7 +1,7 @@
-package main.jdbcWork;
+package jdbcWork;
 
-import main.logic.Client;
-import main.utilContext;
+import logic.Client;
+import logic.utilContext;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;

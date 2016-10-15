@@ -143,6 +143,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/home/bigAppl/main/logic/utilContext.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/home/bigAppl/main/logicHib/Account.java">
           <value>
             <set />
@@ -179,6 +184,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/home/bigAppl/resource/hibernate.cfg.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/bigAppl/resources/context.xml">
           <value>
             <set />
           </value>
@@ -369,6 +379,76 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/home/hibernateAppl/resources/context.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/hibernateAppl/src/main/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/hibernateAppl/src/main/controllers/ClientController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/hibernateAppl/src/main/controllers/HomeController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/hibernateAppl/src/main/dao/AccountDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/hibernateAppl/src/main/dao/AccountDaoImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/hibernateAppl/src/main/dao/ClientDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/hibernateAppl/src/main/dao/ClientDaoImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/hibernateAppl/src/main/dao/DocumentDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/hibernateAppl/src/main/dao/DocumentDaoImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/hibernateAppl/src/main/logicHib/Account.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/hibernateAppl/src/main/logicHib/Client.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/hibernateAppl/src/main/logicHib/Document.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/hibernateAppl/src/main/utilContext.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/home/hibernateAppl/src/resources/context.xml">
           <value>
             <set />
           </value>

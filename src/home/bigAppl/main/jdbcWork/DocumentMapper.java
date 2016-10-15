@@ -1,8 +1,8 @@
-package main.jdbcWork;
+package jdbcWork;
 
-import main.logic.Account;
-import main.logic.Document;
-import main.utilContext;
+import logic.Account;
+import logic.Document;
+import logic.utilContext;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;

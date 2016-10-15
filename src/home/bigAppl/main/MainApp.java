@@ -1,11 +1,8 @@
-package main;
 
-import main.jdbcWork.AccountDao;
-import main.jdbcWork.ClientDao;
-import main.jdbcWork.DocumentDao;
-import main.logic.Account;
-import main.logic.Client;
-import main.logic.Document;
+import jdbcWork.AccountDao;
+import jdbcWork.ClientDao;
+import jdbcWork.DocumentDao;
+import logic.*;
 
 import java.math.BigDecimal;
 import java.util.Date;
@@ -16,9 +13,9 @@ public class MainApp {
         ClientDao clientJDBC = (ClientDao) utilContext.context.getBean("ClientDaoImpl");
         AccountDao accountJDBC = (AccountDao) utilContext.context.getBean("AccountDaoImpl");
         DocumentDao documentJDBC = (DocumentDao) utilContext.context.getBean("DocumentDaoImpl");
-        /*Account account = (Account) utilContext.context.getBean("account");
-        Account account1 = (Account) utilContext.context.getBean("account");
-        Document document = (Document) utilContext.context.getBean("document");
+        /*Account account = (Account) logic.utilContext.context.getBean("account");
+        Account account1 = (Account) logic.utilContext.context.getBean("account");
+        Document document = (Document) logic.utilContext.context.getBean("document");
         clientJDBC.create(1, "John Dyson");
         clientJDBC.create(2, "LeBron James");
 

@@ -1,5 +1,6 @@
 package main.controllers;
 
+import main.controllers.ClientController;
 import main.dao.ClientDao;
 import main.dao.ClientDaoImpl;
 import org.junit.*;

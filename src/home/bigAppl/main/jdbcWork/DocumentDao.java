@@ -1,8 +1,8 @@
-package main.jdbcWork;
+package jdbcWork;
 
-import main.logic.Account;
-import main.logic.Client;
-import main.logic.Document;
+import logic.Account;
+import logic.Client;
+import logic.Document;
 
 import javax.sql.DataSource;
 import java.math.BigDecimal;

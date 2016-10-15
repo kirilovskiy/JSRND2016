@@ -1,6 +1,6 @@
-package main.logic;
+package logic;
 
-import main.jdbcWork.DocumentDaoImpl;
+import jdbcWork.DocumentDaoImpl;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
