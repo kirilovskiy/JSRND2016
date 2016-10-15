@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+    <!-- Здесь должны находиться объявления компонентов -->
+
+    <bean id="client" class="logicHib.Client" scope="prototype"/>
+    <bean id="account" class="logicHib.Account" scope="prototype"/>
+    <bean id="document" class="logicHib.Document" scope="prototype"/>
+
+    <bean id="ClientDaoImpl" class="dao.ClientDaoImpl">
+        <property name="sessionFactory" ref="sessionFactorySpring" />
+    </bean>
+
+    <bean id="AccountDaoImpl" class="dao.AccountDaoImpl">
+        <property name="sessionFactory" ref="sessionFactorySpring" />
+    </bean>
+
+    <bean id="DocumentDaoImpl" class="dao.DocumentDaoImpl">
+        <property name="sessionFactory" ref="sessionFactorySpring"/>
+    </bean>
+
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="org.h2.Driver" />
+        <property name="url" value="jdbc:h2:tcp://localhost/~/test" />
+        <property name="username" value="sa" />
+        <property name="password" value="" />
+    </bean>
+
+    <bean id="sessionFactorySpring"
+          class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="packagesToScan" value="logicHib"/>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.H2Dialect</prop>
+                <prop key="hibernate.connection.pool_size">1</prop>
+                <prop key="hibernate.current_session_context_class">thread</prop>
+                <prop key="hibernate.show_sql">false</prop>
+                <prop key="hbm2ddl.auto">update</prop>
+            </props>
+        </property>
+    </bean>
+</beans>

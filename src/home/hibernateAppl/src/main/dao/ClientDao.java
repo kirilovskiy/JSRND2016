@@ -1,7 +1,6 @@
-package main.dao;
+package dao;
 
-import main.logicHib.Client;
-import main.logicHib.Client;
+import logicHib.Client;
 
 import java.util.List;
 

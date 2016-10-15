@@ -1,6 +1,6 @@
-package main.dao;
+package dao;
 
-import main.logicHib.Document;
+import logicHib.Document;
 
 import java.util.List;
 

@@ -1,12 +1,6 @@
-package main;
 
-import main.dao.*;
-import main.logicHib.Account;
-import main.logicHib.Client;
-import main.logicHib.Document;
-import main.dao.*;
-import main.logicHib.Account;
-
+import dao.*;
+import logicHib.*;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;

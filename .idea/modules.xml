@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JSRND2016.iml" filepath="$PROJECT_DIR$/JSRND2016.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/home/bigAppl/bigAppl.iml" filepath="$PROJECT_DIR$/src/home/bigAppl/bigAppl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/home/hibernateAppl/hibernateAppl.iml" filepath="$PROJECT_DIR$/src/home/hibernateAppl/hibernateAppl.iml" />
+    </modules>
+  </component>
+</project>

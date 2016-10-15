@@ -1,4 +1,4 @@
-package main.logicHib;
+package logicHib;
 
 import org.springframework.transaction.annotation.Transactional;
 

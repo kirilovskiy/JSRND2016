@@ -1,10 +1,9 @@
-package main.dao;
+package dao;
 
-import main.logicHib.Account;
-import main.logicHib.Client;
+import logicHib.Account;
+import logicHib.Client;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import main.logicHib.Client;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
-package main.dao;
+package dao;
 
-import main.logicHib.Client;
-import main.logicHib.Document;
+import logicHib.Client;
+import logicHib.Document;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 

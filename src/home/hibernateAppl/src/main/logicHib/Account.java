@@ -1,4 +1,4 @@
-package main.logicHib;
+package logicHib;
 
 import javax.persistence.*;
 import java.io.Serializable;
