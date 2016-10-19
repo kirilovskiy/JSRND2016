@@ -1,6 +1,3 @@
-/**
- * Created by batmah on 16.10.16.
- */
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
@@ -11,8 +8,8 @@ class App extends Component{
     render(){
     return (
     <div>
-        {this.props.children}
-        <div>{this.props.target}</div>
+        {props.children}
+        <div>{props.target}</div>
     </div>
     );
     }
@@ -21,4 +18,5 @@ class App extends Component{
 App.propTypes = {
     target: React.PropTypes.string.isRequired
 }
+
 export default App;

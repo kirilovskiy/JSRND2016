@@ -1,6 +1,4 @@
-package first;
-
-import third.WorkQueue;
+package home.twelfth.src.main.java.first;
 
 class MyRunnable implements Runnable{
     private String mes;
@@ -15,6 +13,7 @@ class MyRunnable implements Runnable{
 }
 public class Main{
     public static void main(String[] args) throws Exception {
+/*
         System.out.println("start main program");
         WorkQueue workQueue = new WorkQueue(Runtime.getRuntime().availableProcessors());
         for(int i = 0; i < 50 ; i++) {
@@ -29,6 +28,7 @@ public class Main{
 
         System.out.println("end main program");
         System.exit(1);
+*/
 
     }
 

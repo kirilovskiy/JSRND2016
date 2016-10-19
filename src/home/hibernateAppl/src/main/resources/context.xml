@@ -41,4 +41,9 @@
             </props>
         </property>
     </bean>
+
+    <bean id="clientRestController" class="rest.controller.ClientRestController">
+        <property name="clientDao" ref="ClientDaoImpl" />
+    </bean>
+
 </beans>
