@@ -1,5 +1,6 @@
 package dao;
 
+import logicHib.Account;
 import logicHib.Client;
 import logicHib.Document;
 import org.hibernate.Session;
@@ -29,5 +30,17 @@ public class DocumentDaoImpl implements DocumentDao {
         List<Document> documents = session.createQuery("from Document order by id").list();
         session.close();
         return documents;
+    }
+
+    @Override
+    public Document getDocumentFromDb(long id) {
+        Session session = sessionFactory.getCurrentSession();
+        session.beginTransaction();
+        try {
+            return session.get(Document.class,id);
+        } finally {
+            session.getTransaction().commit();
+            session.close();
+        }
     }
 }

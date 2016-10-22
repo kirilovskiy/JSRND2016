@@ -1,6 +1,8 @@
 
 import dao.*;
 import logicHib.*;
+import rest.controller.AccountRestController;
+
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
@@ -10,6 +12,9 @@ public class Main {
         ClientDao clientDao = utilContext.getApplicationContext().getBean(ClientDaoImpl.class);
         AccountDao accountDao = utilContext.getApplicationContext().getBean(AccountDaoImpl.class);
         DocumentDao documentDao = utilContext.getApplicationContext().getBean(DocumentDaoImpl.class);
+
+        AccountRestController accountRestController =
+                utilContext.getApplicationContext().getBean(AccountRestController.class);
 
         /*Client client =  utilContext.getApplicationContext().getBean(Client.class);
         Client client1 =  utilContext.getApplicationContext().getBean(Client.class);

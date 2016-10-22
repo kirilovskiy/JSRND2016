@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-class App extends Component{
+/*class App extends Component{
     constructor(props){
         super(props);
     }
@@ -17,6 +17,14 @@ class App extends Component{
 
 App.propTypes = {
     target: React.PropTypes.string.isRequired
-}
+}*/
+
+const App = ({target}) => (
+    <div> Hi World {target} </div>
+);
+
+App.propTypes = {
+    target: React.PropTypes.string.isRequired
+};
 
 export default App;

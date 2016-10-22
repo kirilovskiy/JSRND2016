@@ -4,6 +4,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
     <!-- Здесь должны находиться объявления компонентов -->
 
+    <bean name="viewResolver" class="org.springframework.web.servlet.view.BeanNameViewResolver"/>
+    <bean name="jsonTemplate" class="org.springframework.web.servlet.view.json.MappingJackson2JsonView"/>
+
     <bean id="client" class="logicHib.Client" scope="prototype"/>
     <bean id="account" class="logicHib.Account" scope="prototype"/>
     <bean id="document" class="logicHib.Document" scope="prototype"/>
@@ -44,6 +47,14 @@
 
     <bean id="clientRestController" class="rest.controller.ClientRestController">
         <property name="clientDao" ref="ClientDaoImpl" />
+    </bean>
+
+    <bean id="accountRestController" class="rest.controller.AccountRestController">
+        <property name="accountDao" ref="AccountDaoImpl" />
+    </bean>
+
+    <bean id="documentRestController" class="rest.controller.DocumentRestController">
+        <property name="documentDao" ref="DocumentDaoImpl" />
     </bean>
 
 </beans>
