@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JSRND2016.iml" filepath="$PROJECT_DIR$/JSRND2016.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/com/sbt/lesson28/asynс/async.iml" filepath="$PROJECT_DIR$/src/com/sbt/lesson28/asynс/async.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/home/bigAppl/bigAppl.iml" filepath="$PROJECT_DIR$/src/home/bigAppl/bigAppl.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/home/eleventh/eleventh.iml" filepath="$PROJECT_DIR$/src/home/eleventh/eleventh.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/home/hibernateAppl/hibernateAppl.iml" filepath="$PROJECT_DIR$/src/home/hibernateAppl/hibernateAppl.iml" />
